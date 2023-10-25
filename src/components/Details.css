@@ -1,0 +1,83 @@
+.details .img-container-details {
+    height: 60vh;
+    position: relative;
+}
+
+.details .img-container-details img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+
+}
+
+.details .movie-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.details .movie-content .date {
+    color: white;
+
+}
+
+.details .movie-content .title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.details .movie-content .overview {
+    white-space: wrap;
+    color: white;
+}
+
+.details .poster-container {
+    width: 300px;
+}
+
+.details .poster-container img {
+    width: 100%;
+}
+
+.details .movie-content .description {
+    width: 70%;
+}
+
+
+@media (max-width: 768px) {
+    .details .img-container-details {
+        display: none;
+    }
+    .details .movie-content {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 15px;
+        left: 0;
+    }
+
+    .details .movie-content .date {
+        color: black;
+
+    }
+
+    .details .movie-content .title {
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .details .movie-content .overview {
+        white-space: wrap;
+        color: black;
+    }
+
+    .details .poster-container {
+        width: 70%;
+        margin: auto;
+    }
+}
